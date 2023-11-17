@@ -1,123 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
 }
-html, body{
-    display: flex;
-    height: 100vh;
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
     width: 100%;
-    place-items: center;
-    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  }
 }
-::selection{
-    background: #ff80bf;
-}
-.container{
-    background: #fff;
-    max-width: 350px;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-sizing: 0 10px 10px rgba(0, 0, 0, 0.15);
-
-}
-.container form .title{
-    font-size: 30px;
-    font-weight: 600;
-    margin: 20px 0 10px 0;
-    position: relative;
-}
-.container form .title:before{
-    content: '';
-    position: absolute;
-    height: 4px;
-    width: 33px;
-    left: 0px;
-    bottom: 3px;
-    border-radius: 5px;
-    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-}
-.container form .input-box input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    font-size: 16px;
-    border: none;
-}
-.container form .input-box underline{
-    margin: 6;
-}
-.container form .underline::before{
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #ccc;
-    left: 0;
-    bottom: 0;
-}
-.container form .underline::after{
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transform: all 0.3s ease;
-}
-.container .input-box input[type="submit"]:hover{
-    letter-spacing: 1px;
-    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
