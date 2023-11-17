@@ -6,7 +6,130 @@
     <title> Login and Registration Form in HTML & CSS | CodingLab </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sign.css">
-<style></style>
+<style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html, body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+::selection{
+    background: #ff80bf;
+}
+.container{
+    background: #fff;
+    max-width: 350px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-sizing: 0 10px 10px rgba(0, 0, 0, 0.15);
+
+}
+.container form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+.container form .title:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+.container form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+.container form .input-box underline{
+    margin: 6;
+}
+.container form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+.container form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transform: all 0.3s ease;
+}
+.container .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
     
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
